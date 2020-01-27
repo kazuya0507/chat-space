@@ -9,6 +9,7 @@
 belongs_to :group
 belongs_to :user
 
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -18,6 +19,7 @@ belongs_to :user
 has_many :groups_users
 has_many :grups, through: :groups_users
 has_many :messages
+
 
 ## groupsテーブル
 |Column|Type|Options|
