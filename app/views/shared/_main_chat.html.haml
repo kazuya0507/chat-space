@@ -1,0 +1,38 @@
+.chat-main
+  .main-header
+    .main-header__group
+      %h1.main-header__group__name
+        test
+      %ul.main-header__group__member
+        Member : 
+        %li.main-header__group__member__name
+          test
+    = link_to "#", class:"main-header__edit-btn" do
+      Edit
+    
+  .messages
+    .message
+      .message__info
+        %p.message__info__user-name
+          masa
+        %p.message__info__post-date
+          2020/1/1(sun)00:00:00
+      %p.message__text
+        test1
+    .message
+      .message__info
+        %p.message__info__user-name
+          masa
+        %p.message__info__post-date
+          2021/1/1(sun)00:00:00
+      %p.message__text
+        test2
+        
+  .form
+    %form.new_message
+      .form-post
+        %input{type: "text", class: "form-post__text", placeholder:"type a message"}
+        %label{class: "form-post__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "form-post__image__file"}
+      %input{type: "submit", class: "send-btn", value:"Send"}
