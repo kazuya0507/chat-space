@@ -77,9 +77,12 @@
         color:#999999;
         bottom: 0 ;
         display: flex;
+        li {
+          margin-right: 5px;
+        }
       }
     }
-  &__edit-btn {
+  a {
     color:#38aef0;
     text-decoration: none;
     height: 40px;
